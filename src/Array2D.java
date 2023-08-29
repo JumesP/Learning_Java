@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Array2D {
     public static void main(String[] args) {
 
@@ -31,5 +33,31 @@ public class Array2D {
         System.out.println(result);
         System.out.println(result2);
 
+
+        // 2d array list
+
+        ArrayList<ArrayList<String>> groceryList = new ArrayList();
+
+        ArrayList<String> bakeryList = new ArrayList();
+        bakeryList.add("pasta");
+        bakeryList.add("break");
+        bakeryList.add("donuts");
+
+        ArrayList<String> produceList = new ArrayList();
+        produceList.add("tomatos");
+        produceList.add("cucumber");
+        produceList.add("orabge");
+
+        ArrayList<String> drinksList = new ArrayList();
+        drinksList.add("soda");
+        drinksList.add("coffee");
+        drinksList.add("tea");
+
+        groceryList.add(bakeryList);
+        groceryList.add(produceList);
+        groceryList.add(drinksList);
+
+        System.out.println(groceryList);
+        System.out.println(groceryList.get(2).get(1));
     }
 }
